@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: yellowgreen;
+            width: 100vw;
+            height: 100vh;
+            border: 5px solid brown;
+        }
+        .box{
+           width: 350px;
+           background-color: bisque;
+           height: 80px;
+           border-radius: 10px;
+           margin: 10px; 
+           position: relative;
+           transition-property: all;
+           /* animation-name: rightmove;
+           animation-duration: 5s;
+           animation-delay: 1s;
+           animation-iteration-count: infinite;
+           animation-timing-function: cubic-bezier(0.75, -0.11, 0.19, 1.05);
+           animation-direction: alternate-reverse;
+           animation-fill-mode:none ; */
+        }
+        .box:hover{
+            width: 800px;
+            /* background-color: black; */
+            box-shadow: 10px 15px 9px crimson;
+        }
+        /* @keyframes rightmove {
+            from{
+                top:0;
+                left:0;
+            }
+            to{
+                top:0;
+              left:1200px;
+            }
+        } */
+        #circle{
+            width: 100px;
+           background-color:skyblue;
+           height: 100px;
+           border-radius:50px;
+           border:3px solid red;
+           margin: 10px; 
+           position: relative;
+           top: 50%;
+           left: 50%;
+           /* animation-name: circlemove;
+           animation-duration: 10s;
+           animation-delay: 1s;
+           animation-iteration-count: infinite;
+           animation-timing-function: ease-in-out;
+           animation-direction: alternate-reverse;
+           animation-fill-mode:none ; */
+        }
+        /* @keyframes circlemove {
+           0%{
+                top:1%;
+                left:5%;
+            }
+            30%{
+                top:5%;
+                left:90%;
+            }
+            60%{
+                left:10%;
+                top:90%;
+            }
+            90%{
+                top:50%;
+                left: 70%;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        </div>
+        <div id="circle"></div>
+    </div>
+</body>
+</html>
