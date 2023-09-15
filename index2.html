@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <style>
+        .container{
+            /* display: flex; */
+            justify-content: center;
+            
+        }
+        .word{
+            color: #1E90FF;
+            height: 50px;
+            width: 150px;
+        }
+        .pdf{
+            color:#DC143C;
+            height: 70px;
+            width: 200px;
+        }
+        td{
+            padding: 20px;
+        }
+        .btn1{
+            color: orangered;
+             max-width: 100px;
+             background-color: orange;
+             border-radius: 10px;
+        }
+        .box{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <h1 align="center">Pink Frag Event Management</h1>
+        <p > John's performance for the month of december is given below
+            table</p>
+                <table border="1px">
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Performance</th>
+                    </tr>
+                    <tr>
+                        <td> Wedding Event</td>
+                        <td class="box">
+                            <button class="btn1">progress</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Corporate Event</td>
+                        <td> <button value="60" min="0" max="100"></button></td>
+                    </tr>
+                    <tr>
+                        <td>Social Event</td>
+                        <td><button value="30" max="100"></button></td>
+                    </tr>
+                    <tr>
+                        <td>Sports Event</td>
+                        <td><button value="85" min="0" max="100"></button></td>
+                    </tr>
+                </table> <br>
+                <button class="word"> <i class="fa fa-file-word-o">&#xf1c3</i> Download Word</button>
+                <button class="pdf"><i class="fa fa-file-pdf-o">&#xf1c3</i> Download Pdf</button>
+            </center>
+    </div>
+</body>
+</html>
